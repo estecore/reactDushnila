@@ -1,7 +1,7 @@
-import Emotion from './components/Emotion/Emotion';
+// import Emotion from './components/Emotion/Emotion';
 import Day from './components/Days/Day';
 import Logo from './components/Logo/Logo';
-import Statistic from './components/Statistics/Statistic';
+import Statistic, {Emotion} from './components/Statistics/Statistic';
 import './App.css';
 
 

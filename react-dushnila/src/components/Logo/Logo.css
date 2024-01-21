@@ -6,4 +6,9 @@
     align-items: center;
     border-radius: 20px;
     border: 1px solid #000;
+    overflow: hidden;
+}
+
+.logo__img {
+    margin-right: -10px;
 }

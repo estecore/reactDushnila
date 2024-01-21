@@ -42,7 +42,3 @@ h1, p {
   display: flex;
   justify-content: space-between;
 }
-
-.col.uncomfortable .emotion {
-  background: #FF8A7A;
-}

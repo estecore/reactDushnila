@@ -5,6 +5,9 @@
     border-radius: 20px;
     background: #7AFFA7;
 }
+.emotion.uncomfortable {
+    background: #FF8A7A;
+  }
 
 .emotion__text {
     font-size: 89px;
