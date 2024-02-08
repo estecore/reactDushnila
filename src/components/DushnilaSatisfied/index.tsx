@@ -1,10 +1,12 @@
-export const DushnilaBlock: React.FC<{ uncomfort: boolean }> = ({
+import styles from "./Dushnila.module.scss";
+
+export const DushnilaSatisfied: React.FC<{ uncomfort: boolean }> = ({
   uncomfort,
 }) => {
   return (
-    <div className={`dushnila_block ${uncomfort && "uncomfortable"}`}>
+    <div className={`${styles.dushnila} ${uncomfort && styles.uncomfortable}`}>
       <h2>
-        Душнила <span className="hide">НЕ</span> <br />
+        Душнила <span className={styles.hide}>НЕ</span> <br />
         доволен вами
       </h2>
       {!uncomfort ? (

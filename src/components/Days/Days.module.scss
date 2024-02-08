@@ -1,0 +1,45 @@
+.days {
+  padding: 30px 20px;
+  margin-right: 40px;
+  width: 50%;
+  background-color: #000;
+  border-radius: 20px;
+
+  h2 {
+    width: 360px;
+    color: #f3f3f3;
+    font-size: 55px;
+    font-weight: 500;
+    margin-bottom: 100px;
+  }
+
+  button {
+    cursor: pointer;
+    padding: 20px 30px;
+    width: 100%;
+    border: 2px solid #fff;
+    border-radius: 100px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-size: 25px;
+    font-weight: 400;
+    transition: all 0.2s ease-in-out;
+
+    span {
+      width: 28px;
+    }
+
+    &:hover {
+      background-color: #000;
+      color: #fff;
+    }
+    &:active {
+      background-color: #fff;
+      color: #000;
+      transform: scale(0.9);
+    }
+  }
+}

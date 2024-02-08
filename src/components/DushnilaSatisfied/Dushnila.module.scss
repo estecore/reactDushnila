@@ -1,0 +1,29 @@
+.dushnila {
+  width: 713px;
+  height: 493px;
+  padding: 60px 0 0 60px;
+  background-color: #7affa7;
+  border-radius: 20px;
+
+  &.uncomfortable {
+    background-color: #ff8a7a;
+
+    .hide {
+      display: inline;
+    }
+  }
+
+  h2 {
+    font-size: 89px;
+    font-weight: 500;
+    margin-bottom: 100px;
+
+    .hide {
+      display: none;
+    }
+  }
+
+  p {
+    font-size: 34px;
+  }
+}

@@ -1,3 +1,5 @@
+import styles from "./Statistics.module.scss";
+
 type InformationProps = {
   data: {
     co2: string;
@@ -5,12 +7,11 @@ type InformationProps = {
   };
   uncomfort: boolean;
 };
-export const InformationBlock: React.FC<InformationProps> = ({
-  data,
-  uncomfort,
-}) => {
+export const Statistics: React.FC<InformationProps> = ({ data, uncomfort }) => {
   return (
-    <div className={`information_block ${uncomfort && "uncomfortable"}`}>
+    <div
+      className={`${styles.statistics} ${uncomfort && styles.uncomfortable}`}
+    >
       <div>
         <h2>{Math.round(Number(data.temp) * 10) / 10} ℃</h2>
         <h3>Температура</h3>
