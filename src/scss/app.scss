@@ -27,9 +27,10 @@ p {
   max-width: 1920px;
   margin: 50px auto;
   width: 100%;
-  height: 100%;
 
   .main_title {
+    text-align: center;
+    margin-bottom: 40px;
     font-size: 37px;
     font-weight: 700;
     letter-spacing: 1.27em;
@@ -38,7 +39,6 @@ p {
 
   .content {
     width: 100%;
-    height: 1000px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -47,11 +47,13 @@ p {
     border: 2px solid #000;
 
     .half1 {
-      height: 100%;
+      height: 920px;
     }
 
     .dushnila_block {
-      padding: 60px;
+      width: 713px;
+      height: 493px;
+      padding: 60px 0 0 60px;
       background-color: #7affa7;
       border-radius: 20px;
 
@@ -79,6 +81,7 @@ p {
     }
 
     .half {
+      height: 383px;
       margin-top: 40px;
       display: flex;
       justify-content: space-between;
@@ -91,17 +94,18 @@ p {
         border-radius: 20px;
 
         h2 {
+          width: 360px;
           color: #f3f3f3;
           font-size: 55px;
           font-weight: 500;
-          margin-bottom: 120px;
+          margin-bottom: 100px;
         }
 
         button {
           cursor: pointer;
           padding: 20px 30px;
           width: 100%;
-          border: none;
+          border: 2px solid #fff;
           border-radius: 100px;
           background-color: #fff;
           display: flex;
@@ -118,7 +122,6 @@ p {
           &:hover {
             background-color: #000;
             color: #fff;
-            border: 2px solid #fff;
           }
         }
       }
@@ -142,7 +145,9 @@ p {
     }
 
     .information_block {
-      padding: 100px;
+      width: 60%;
+      margin-left: 40px;
+      padding: 100px 0 0 100px;
       height: 920px;
       border: 2px solid #000;
       border-radius: 20px;
@@ -168,6 +173,35 @@ p {
       h3 {
         font-size: 40px;
         font-weight: 700;
+      }
+
+      @media (max-width: 1700px) {
+        h2 {
+          font-size: 150px;
+        }
+      }
+      @media (max-width: 1300px) {
+        h2 {
+          font-size: 100px;
+        }
+      }
+    }
+    @media (max-width: 1300px) {
+      & {
+        flex-direction: column-reverse;
+
+        .information_block {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          justify-content: space-between;
+          flex-wrap: wrap;
+          margin-bottom: 40px;
+
+          div:first-child {
+            margin-bottom: 20px;
+          }
+        }
       }
     }
   }

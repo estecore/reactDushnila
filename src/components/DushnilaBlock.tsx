@@ -7,7 +7,11 @@ export const DushnilaBlock: React.FC<{ uncomfort: boolean }> = ({
         Душнила <span className="hide">НЕ</span> <br />
         доволен вами
       </h2>
-      {!uncomfort ? <p>Все показатели в норме</p> : <p>CO2 превышает норму</p>}
+      {!uncomfort ? (
+        <p>Все показатели в норме</p>
+      ) : (
+        <p>CO2 или Температура превышает норму!</p>
+      )}
     </div>
   );
 };
