@@ -15,14 +15,15 @@ export const App: React.FC = () => {
   // function get co2 and temp from api and setUncomfort
   const getInformation = React.useCallback(async () => {
     try {
-      await fetch("http://dushnila.gooddelo.com/data")
+      await fetch("http://dushnila.gooddelo.com/data/", { mode: "cors" })
         .then((res) => res.json())
         .then((data) => {
           setData(data);
           setUncomfort(Number(data.co2) > 800 || Number(data.temp) > 27);
         });
     } catch (error) {
-      alert("error");
+      alert("Здесь настолько Душно, что данные не загрузились..");
+      console.log(error);
     }
   }, []);
 
