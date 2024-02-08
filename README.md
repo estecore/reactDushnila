@@ -1,7 +1,7 @@
 ## React Dushnila Project
 
 
-### Use  npm install --legacy-peer-deps
+### Use   --legacy-peer-deps
 
 
 **ENG**
