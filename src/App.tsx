@@ -30,7 +30,10 @@ export const App: React.FC = () => {
   // sets the initial value when the page is rendered and starts the value update interval
   React.useEffect(() => {
     getInformation();
-    setInterval(() => getInformation(), 10000);
+    const getInterval = setInterval(getInformation, 10000);
+    return () => {
+      clearInterval(getInterval);
+    };
   }, []);
 
   return (
