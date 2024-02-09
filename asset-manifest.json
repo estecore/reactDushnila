@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/reactDushnila/static/css/main.4c8e7bf8.css",
-    "main.js": "/reactDushnila/static/js/main.0eb43022.js",
+    "main.js": "/reactDushnila/static/js/main.2a79f81c.js",
     "static/media/logo.svg": "/reactDushnila/static/media/logo.88b7c17e77291acc2c281aec9e079816.svg",
     "index.html": "/reactDushnila/index.html",
     "main.4c8e7bf8.css.map": "/reactDushnila/static/css/main.4c8e7bf8.css.map",
-    "main.0eb43022.js.map": "/reactDushnila/static/js/main.0eb43022.js.map"
+    "main.2a79f81c.js.map": "/reactDushnila/static/js/main.2a79f81c.js.map"
   },
   "entrypoints": [
     "static/css/main.4c8e7bf8.css",
-    "static/js/main.0eb43022.js"
+    "static/js/main.2a79f81c.js"
   ]
 }
